@@ -24,6 +24,7 @@ settings() {
 
 middleweares() {
     this.app.use(morgan('dev'));
+    this.app.use(express.urlencoded({extended: false}));
 }
 
 routes() {
